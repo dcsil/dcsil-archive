@@ -12,7 +12,7 @@
 
 ## Student Expectations
 
-Please see the "Student Expectations" section [here](/student-courses).
+Please see the "Student Expectations" section <a href="{{ site.baseurl }}/student-courses">here</a>.
 
 <br>
 
