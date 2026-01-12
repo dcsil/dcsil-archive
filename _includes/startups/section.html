@@ -1,0 +1,32 @@
+{% if site.data.settings.startups %}
+<!-- startups -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Our Startups</h2>
+      </div>
+    </div>
+    <div class="container">
+      {% include startups/slider.html %}
+    </div>
+    <div class="row shuffle-wrapper">
+      {% for item in site.data.settings.startups %}
+      <div class="col-lg-4 col-md-6 col-12 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="{{ site.baseurl }}/{{ item.image }}" height="256" width="auto" loading="lazy" alt="portfolio-image" class="startup-image img-fluid rounded d-block">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="{{ item.url }}">{{ item.text }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+
+  </div>
+</section>
+<!-- /startups -->
+{% endif %}
